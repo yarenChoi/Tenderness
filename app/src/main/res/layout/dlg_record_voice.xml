@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="24dp"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/TextMediumTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/create_a_voice_record"/>
+
+    <EditText
+        android:id="@+id/et_voice_title"
+        style="@style/TextSmallContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:background="@android:drawable/edit_text"
+        android:hint="@string/describe_your_record"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/TextWhiteContent"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="cancelRecording"
+            android:background="@drawable/selector_fillet_red"
+            android:padding="@dimen/widget_margin"
+            android:gravity="center"
+            android:text="@string/cancel"/>
+
+        <TextView
+            style="@style/TextWhiteContent"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/widget_margin"
+            android:clickable="true"
+            android:onClick="finishRecording"
+            android:background="@drawable/selector_fillet_green"
+            android:padding="@dimen/widget_margin"
+            android:gravity="center"
+            android:text="@string/ok" />
+    </LinearLayout>
+</LinearLayout>

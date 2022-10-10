@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg_play"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp"
+    tools:context=".ui.activity.PlayVoiceActivity">
+
+    <TextView
+        android:id="@+id/tv_voice_title"
+        style="@style/TextLargeTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/title" />
+    <TextView
+        android:id="@+id/tv_voice_date"
+        style="@style/TextDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/widget_margin"
+        android:gravity="center"
+        android:textColor="@color/title" />
+
+    <TextView
+        android:id="@+id/tv_voice_len"
+        style="@style/TextMediumContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/widget_margin"
+        android:gravity="center"
+        android:textColor="@color/title" />
+
+    <ImageView
+        android:id="@+id/iv_play_voice"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/widget_margin"
+        android:clickable="true"
+        android:src="@drawable/video_recorder_start_btn" />
+</LinearLayout>

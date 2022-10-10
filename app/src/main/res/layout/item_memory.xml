@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="@dimen/activity_vertical_margin">
+
+    <ImageView
+        android:id="@+id/iv_memory_cover"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/memory_image_height"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image_default" />
+
+    <TextView
+        android:id="@+id/tv_memory_title"
+        style="@style/TextSmallTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_memory_cover"
+        android:gravity="center"
+        android:paddingTop="@dimen/widget_margin"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/tv_memory_date"
+        style="@style/TextDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_memory_title"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="@dimen/widget_margin"
+        android:paddingRight="@dimen/widget_margin"
+        android:paddingTop="@dimen/widget_margin" />
+
+    <TextView
+        android:id="@+id/tv_memory_time"
+        style="@style/TextTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_memory_title"
+        android:layout_toEndOf="@+id/tv_memory_date"
+        android:paddingTop="@dimen/widget_margin" />
+</RelativeLayout>

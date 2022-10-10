@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3E6F6A</color>
+    <color name="colorPrimaryDark">#145158</color>
+    <color name="colorAccent">#3E6F6A</color>
+
+    <color name="guide_overlay">#e03e3e3e</color>
+
+    <color name="title">#ffffff</color>
+
+    <color name="editText">#3e3e3e</color>
+    <color name="editTextHint">#3f3f3f</color>
+    <color name="editTextBg">#739680</color>
+
+</resources>

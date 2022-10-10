@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_memory_cover"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/memory_image_height"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image_default" />
+
+    <TextView
+        android:id="@+id/tv_memory_title"
+        style="@style/TextLargeTitle"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/widget_margin"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="一个人的厦门旅行，带上背包与狗aa"/>
+
+    <TextView
+        android:id="@+id/tv_memory_date"
+        style="@style/TextDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/widget_margin"
+        android:gravity="center"
+        android:text="2016-01-02"/>
+    <TextView
+        android:id="@+id/tv_memory_time"
+        style="@style/TextTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="10:20"/>
+
+    <TextView
+        android:id="@+id/tv_memory_desc"
+        style="@style/TextMediumContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/widget_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:text="一起吃了好多好吃的"/>
+</LinearLayout>

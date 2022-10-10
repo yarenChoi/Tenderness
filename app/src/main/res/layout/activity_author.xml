@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tenderness="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.AuthorActivity">
+
+    <com.yarenchoi.tenderness.widget.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tenderness:titleBarLeftImage="@drawable/ic_gf_back"
+        tenderness:titleBarTitle="@string/contact_author" />
+
+    <ImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:src="@drawable/vito" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/TextMediumTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/widget_margin"
+        android:gravity="center"
+        android:text="YarenChoi" />
+
+    <TextView
+        android:id="@+id/tv_desc"
+        style="@style/TextMediumContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/widget_margin"
+        android:gravity="center"
+        android:text="South China Normal University" />
+
+    <TextView
+        android:id="@+id/tv_contact"
+        style="@style/TextMediumContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/widget_margin"
+        android:gravity="center"
+        android:text="yarenchoi@163.com" />
+</LinearLayout>

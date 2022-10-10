@@ -1,0 +1,102 @@
+<resources>
+
+    <style name="AppTheme" parent="AppTheme.NoActionBar">
+        <!-- Theme.AppCompat.Light.NoActionBar -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.DayNight">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Text">
+        <item name="android:typeface">serif</item>
+    </style>
+
+    <style name="TextTitle" parent="Text">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/title</item>
+    </style>
+
+    <style name="TextWhiteContent" parent="Text">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/title</item>
+    </style>
+
+    <style name="TextHint" parent="Text">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="TextLargeTitle" parent="Text">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextMediumTitle" parent="Text">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextSmallTitle" parent="Text">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextMediumContent" parent="Text">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextSmallContent" parent="Text">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextDate" parent="Text">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="TextTime" parent="Text">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="EditText" parent="Text">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/editText</item>
+        <item name="android:textColorHint">@color/editTextHint</item>
+        <item name="android:enabled">true</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="TabLayout">
+        <!-- tab的指示符颜色 -->
+        <item name="tabIndicatorColor">@color/colorAccent</item>
+        <!-- 选择tab的文本颜色 -->
+        <item name="tabSelectedTextColor">@color/colorAccent</item>
+        <!-- 普通tab字体颜色 -->
+        <item name="tabTextColor">@color/colorPrimary</item>
+        <!-- fixed是指固定个数，scrollable是可以横行滚动的 -->
+        <item name="tabMode">fixed</item>
+        <!-- 对齐方式 -->
+        <item name="tabGravity">fill</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="DialogActivityStyle" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+</resources>

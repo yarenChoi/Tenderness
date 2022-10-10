@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Tenderness</string>
+
+    <string name="tab_memories">Memories</string>
+    <string name="tab_voice">Voice</string>
+
+    <string name="memory">memory</string>
+    <string name="menu_create_memory">create Memory!</string>
+    <string name="take_a_photo">Take a photo</string>
+    <string name="open_gallery">Open gallery</string>
+    <string name="create_memory_title">Take a record of life</string>
+    <string name="create_memory_hint_title">title</string>
+    <string name="create_memory_hint_describe">describe here…</string>
+    <string name="delete_memory">Delete memory</string>
+    <string name="edit_memory">Edit memory</string>
+    <string name="edit_memory_title">Edit your memory</string>
+    <string name="confirm_deletion_of_this_memory">Confirm deletion of this memory</string>
+    <string name="this_memory_is_not_found">This memory is not found! \nPlease refresh the List</string>
+
+    <string name="loading">Loading…</string>
+    <string name="_00_00">0\"</string>
+    <string name="recording_title">Record your voice</string>
+    <string name="create_a_voice_record">Create a voice record</string>
+    <string name="describe_your_record">describe your record</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="nav_header_title">Designed for my lover \nPio</string>
+
+    <string name="nav_settings">Settings</string>
+    <string name="nav_synchronize">Synchronize</string>
+    <string name="nav_tools">Tools</string>
+
+    <string name="delete_succeed">Delete succeed</string>
+    <string name="delete_failed">Delete failure</string>
+    <string name="contact_author">Contact author</string>
+    <string name="code_book">Code book</string>
+    <string name="night_mode">Night mode</string>
+
+    <string name="language">Language</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="chinese">简体中文</string>
+    <string name="english">English</string>
+    <string name="clean_cache">Clean cache</string>
+    <string name="no">NO</string>
+    <string name="yes">YES</string>
+</resources>

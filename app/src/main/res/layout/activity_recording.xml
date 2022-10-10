@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:voiceView="http://schemas.android.com/apk/res-auto"
+    xmlns:tenderness="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/black"
+    tools:context=".ui.activity.RecordingActivity">
+
+    <com.yarenchoi.tenderness.widget.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tenderness:titleBarLeftImage="@mipmap/ic_title_back"
+        tenderness:titleBarTitle="@string/recording_title" />
+
+    <com.yarenchoi.tenderness.widget.VoiceLineView
+        android:id="@+id/voice_line"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        voiceView:fineness="three"
+        voiceView:maxVolume="200"
+        voiceView:middleLine="@android:color/holo_red_light"
+        voiceView:middleLineHeight="1dp"
+        voiceView:sensibility="one"
+        voiceView:voiceLine="@android:color/holo_red_light" />
+
+    <TextView
+        android:id="@+id/tv_recorder_time"
+        style="@style/TextTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/_00_00" />
+
+    <ImageView
+        android:id="@+id/iv_recorder"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_gravity="center_horizontal"
+        android:clickable="true"
+        android:layout_margin="@dimen/widget_margin"
+        android:background="@drawable/video_recorder_start_btn" />
+</LinearLayout>

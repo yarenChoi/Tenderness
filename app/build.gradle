@@ -1,0 +1,72 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.1"
+
+    defaultConfig {
+        applicationId "com.yarenchoi.tenderness"
+        minSdkVersion 19
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+
+        // dex突破65535的限制
+        multiDexEnabled true
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    signingConfigs {
+        release {
+        }
+    }
+
+    buildTypes {
+        release {
+            //混淆
+            minifyEnabled true
+            //加载默认混淆配置文件
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            // 不显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            //Zipalign优化
+            zipAlignEnabled true
+            // 移除无用的resource文件
+            shrinkResources true
+        }
+    }
+}
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'org.greenrobot:greendao-gradle-plugin:3.1.0'
+    }
+}
+
+greendao {
+    schemaVersion 1
+    daoPackage 'com.yarenchoi.tenderness.db.dao'
+    targetGenDir 'src/main/java'
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    //ASD提供向下兼容的material design
+    compile 'com.android.support:design:24.1.1'
+    compile 'com.android.support:appcompat-v7:24.1.1'
+    //greenDAO
+    compile 'org.greenrobot:greendao:3.1.0'
+    //GalleryFinal
+    compile 'cn.finalteam:galleryfinal:1.4.8.7'
+    compile 'com.android.support:support-v4:24.1.1'
+    //Glide,同样需要support-v4
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+}

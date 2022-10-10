@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tenderness="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.MemoryShowActivity">
+
+    <com.yarenchoi.tenderness.widget.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tenderness:titleBarLeftImage="@mipmap/ic_title_back"
+        tenderness:titleBarRightImage="@android:drawable/ic_menu_more"/>
+
+    <ViewStub
+        android:id="@+id/vs_memory_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:layout="@layout/vs_error"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_memory_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

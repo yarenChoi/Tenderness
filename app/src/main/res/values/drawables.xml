@@ -1,0 +1,8 @@
+<resources>
+    <item name="ic_menu_camera" type="drawable">@android:drawable/ic_menu_camera</item>
+    <item name="ic_menu_gallery" type="drawable">@android:drawable/ic_menu_gallery</item>
+    <item name="ic_code_book" type="drawable">@android:drawable/ic_lock_idle_lock</item>
+    <item name="ic_contact_author" type="drawable">@android:drawable/ic_menu_call</item>
+    <item name="ic_menu_manage" type="drawable">@android:drawable/ic_menu_manage</item>
+    <item name="ic_menu_sync" type="drawable">@mipmap/ic_sync</item>
+</resources>
